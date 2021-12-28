@@ -4,10 +4,12 @@
   background-color: #f5f9fe;
   box-shadow: 0 2px 4px #e2ebfc;
   padding: 10px;
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .header__logo {
       a {
         font-size: 2.5rem;
@@ -15,15 +17,20 @@
         color: $primary-main;
       }
     }
+
     .header__nav {
       .header__nav-list {
         display: flex;
+
         .header__nav-item {
           padding: 25px;
+
           a {
             font-size: 1.5rem;
             font-weight: 600;
             color: $primary-dark;
+            text-decoration: none;
+
             &::after {
               content: "";
               width: 100%;
@@ -34,18 +41,22 @@
               transition: all 0.2s;
             }
           }
+
           &:hover {
             a {
               color: $primary-main;
+
               &::after {
                 transform: scale(1);
               }
             }
           }
         }
+
         .header__nav-item--active {
           a {
             color: #2a73dd;
+
             &::after {
               content: "";
               width: 100%;
