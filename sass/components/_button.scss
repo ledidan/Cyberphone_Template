@@ -14,23 +14,50 @@
   background: transparent;
   color: $primary-main;
   border: 2px solid $primary-main;
+  transition: .5s;
+  margin-right: 8px;
+
+  &:hover {
+    background-color: $primary-main;
+    color: white;
+  }
 }
 
 .btn--contained {
-  background: $primary-main;
-  color: white;
-  border: 2px solid $primary-main;
+  background: linear-gradient(120deg, rgb(96, 164, 244), rgb(42, 115, 221));
+  padding: 15.5px 46px;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+
+  &:hover {
+    color: white;
+    background: linear-gradient(120deg, rgb(130, 179, 240), rgb(57, 122, 219));
+  }
 }
 
 .btn--buynow {
-  background: rgb(245 249 254);
+  background: $background-card;
   padding: 8px 20px;
   border: none;
   border-radius: 4px;
   letter-spacing: 0.03rem;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
-  color: rgb(42 115 221);
-  box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
-  transition: .5s;
+  color: $primary-main;
+  box-shadow: $background-shadow;
+  transition: .2s;
+
+  &:hover {
+    box-shadow: -1px -1px 1px rgb(202, 199, 199);
+    ;
+  }
+}
+
+.navbar-toggler {
+  font-size: 25px;
 }
